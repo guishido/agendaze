@@ -30,8 +30,10 @@ html{
 body {
   display: flex;
   margin-top: 1rem;
+  margin-left: 25rem;
   justify-content: center;
   background-color: var(--body-color);
+
 }
 button {
   width: 4.5rem;
@@ -52,14 +54,16 @@ button {
   display: flex;
   justify-content: space-between;
   font-size: 40px;
+
 }
 
 #header button {
-  background-color:#005baf;
+  background-color:rgb(243, 0, 0);
+  height: 2rem;
 }
 
 #header button:hover {
-  background-color:#0580f3;
+  background-color:rgb(255, 133, 133);
 }
 #container {
   width: 770px;
@@ -81,6 +85,7 @@ button {
   display: flex;
   flex-wrap: wrap;
 }
+
 .day {
   width: 6.25rem;
   padding: 10px;
@@ -199,6 +204,77 @@ button {
   height: 100%;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: block;
+    margin-top: 3rem;
+    margin-left: 0rem;
+    justify-content: center;
+    background-color: var(--body-color);
+  }
+
+  #header button {
+    height: 2rem;
+    margin-right: 3.5rem;
+  }
+
+  .imgze {
+    /* altura definida */
+    height: 100vh;
+  }
+
+  .day {
+    width: 4.25rem;
+    padding: 10px;
+    height: 4.25rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: var(--color-day);
+    margin: 15px;
+    box-shadow: 0px 0px 3px var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    /* correção no justify-content */
+    justify-content: space-between;
+    border-radius: 15%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    display: block;
+    margin-top: 3rem;
+    margin-left: 0rem;
+    justify-content: center;
+    background-color: var(--body-color);
+  }
+
+  #header button {
+    height: 2rem;
+    margin-right: 3.5rem;
+  }
+
+  .imgze {
+    /* altura definida */
+    height: 100vh;
+  }
+
+  .day {
+    width: 4.25rem;
+    padding: 10px;
+    height: 4.25rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: var(--color-day);
+    margin: 15px;
+    box-shadow: 0px 0px 3px var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    /* correção no justify-content */
+    justify-content: space-between;
+    border-radius: 15%;
+  }
 }
 
 
