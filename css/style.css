@@ -1,0 +1,204 @@
+html{
+
+
+  --body-color:#FFFCFF ;
+
+  --header-color:#d36c6c;
+
+  --header-button:#92a1d1;
+
+  --color-weekdays: #247BA0;
+  
+  --box-shadow: #CBD4C2;
+
+  --hover: #e8faed;
+
+  --current-day:#e8f4fa;
+
+  --event-color: #58bae4;
+
+  --modal-event: #e8f4fa;
+
+
+ --color-day:white;
+  
+
+}
+
+
+
+body {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  background-color: var(--body-color);
+}
+button {
+  width: 4.5rem;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+#header {
+  padding: 1rem;
+  color: #fffcff;
+  font-size: 26px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+}
+
+#header button {
+  background-color:#005baf;
+}
+
+#header button:hover {
+  background-color:#0580f3;
+}
+#container {
+  width: 770px;
+}
+#weekdays {
+  width: 100%;
+  display: flex;
+  color: #ffffff ;
+  font-size: 15px;
+
+}
+#weekdays div {
+  width: 11rem;
+  padding: 10px;
+}
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: 6.25rem;
+  padding: 10px;
+  height: 6.25rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: var(--color-day);
+  margin: 5px;
+  box-shadow: 0px 0px 3px var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15%;
+}
+.day:hover {
+  background-color: var(--hover);
+}
+
+.day + #currentDay {
+  background-color: rgb(210, 248, 255)
+}
+.event {
+  font-size: 15px;
+  padding: 1px;
+  background-color: var(--event-color);
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+  max-height: 55px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.padding {
+  cursor: default !important;
+  background-color: var(--body-color) !important;
+  box-shadow: none !important;
+}
+#newEventModal, #deleteEventModal {
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: var(--modal-event);
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+  font-family: sans-serif;
+}
+#eventTitleInput {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+#cancelButton, #deleteButton {
+  background-color: var(--header-color);
+}
+#saveButton{
+  background-color: #008512;
+}
+
+#closeButton{
+  background-color: var(--header-button);
+}
+
+#closedButton{
+  background-color: var(--header-button);
+
+}
+
+#possivelButton{
+  background-color: rgb(189, 186, 0);
+}
+
+#saveButton,
+#possivelButton,
+#cancelButton {
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+#cancelButton:hover {
+  background-color: rgb(150, 0, 0)
+
+}
+
+#saveButton:hover {
+  background-color: #00b618;
+}
+
+#possivelButton:hover{
+  background-color: rgb(224, 221, 0);
+}
+
+#eventText {
+  font-size: 14px;
+}
+#modalBackDrop {
+  display: none;
+  position: fixed; /* Para manter o backdrop fixo na tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+

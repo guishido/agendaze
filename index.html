@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- arquivos style -->
+  <link href="./css/style.css" rel="stylesheet">
+  <link  rel="icon" href=".//calendar-event.svg" type=image/x-icon>
+  <title>Agenda Zé Leandro</title>
+</head>
+ 
+<body style="background-image: url('css/img/background.jpg'); 
+              background-size: cover; background-repeat: no-repeat;">
+  <!-- Seu conteúdo HTML aqui -->
+</style=>
+>
+  <div id="container">
+      <div id="header">
+        <div id="monthDisplay"></div>
+
+        <div>
+          <button id="backButton">Voltar</button>
+          <button id="nextButton">Próximo</button>
+        </div>
+          
+      </div>
+
+      <div id="weekdays">
+        <div><strong>Domingo</strong></div>
+        <div><strong>Segunda-feira</strong></div>
+        <div><strong>Terça-feira</strong></div>
+        <div><strong>Quarta-feira</strong></div>
+        <div><strong>Quinta-feira</strong></div>
+        <div><strong>Sexta-feira</strong></div>
+        <div><strong>Sábado</strong></div>
+      </div>
+
+
+      <!-- div dinamic -->
+      <div id="calendar" ></div>
+
+   
+  </div>
+
+  <div id="newEventModal">
+    <h2>Novo Evento</h2>
+
+    <input id="eventTitleInput" placeholder="Escreva aqui o evento..."/>
+
+    <button id="saveButton">Confirmado</button>
+    <button id="possivelButton">Provável</button>
+    <button id="cancelButton">Cancelar</button>
+  </div>
+  
+
+  <div id="deleteEventModal">
+    <h2>Evento</h2>
+
+    <div id="eventText"></div><br>
+
+
+    <button id="deleteButton">Deletar</button>
+    <button id="closeButton">Fechar</button>
+  </div>
+
+  <div id="modalBackDrop"></div>
+
+  <script src="./scripts/main.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
