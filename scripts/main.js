@@ -127,9 +127,18 @@ function saveEvent(eventType){
     eventTitleInput.classList.remove('error')
 
     let eventColor = 'green';
+
     if (eventType === 'possivel') {
         eventColor ='yellow'
-    }
+}
+    if (eventType === 'dois') {
+        eventColor ='orange'
+          
+      }   
+
+
+
+    
 
       events.push({
       date: clicked,
@@ -171,6 +180,8 @@ function buttons (){
   document.getElementById('saveButton').addEventListener('click', () => saveEvent('confirmado'));
 
   document.getElementById('possivelButton').addEventListener('click', () => saveEvent('possivel'));
+  
+  document.getElementById('doisButton').addEventListener('click', () => saveEvent('dois'));
 
   document.getElementById('cancelButton').addEventListener('click',()=>closeModal())
 
