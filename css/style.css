@@ -76,7 +76,7 @@ button {
 
 }
 #weekdays div {
-  width: 11rem;
+  width: 111rem;
   padding: 10px;
 }
 #calendar {
@@ -108,12 +108,12 @@ button {
   background-color: rgb(210, 248, 255)
 }
 .event {
-  font-size: 15px;
+  font-size: 13px;
   padding: 1px;
   background-color: var(--event-color);
   color: rgb(0, 0, 0);
   border-radius: 4px;
-  max-height: 55px;
+  max-height: 75px;
   overflow: hidden;
   text-align: center;
 }
@@ -206,10 +206,11 @@ button {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+
 @media screen and (max-width: 768px) {
   body {
     display: block;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-left: 0rem;
     justify-content: center;
     background-color: var(--body-color);
@@ -240,40 +241,24 @@ button {
     justify-content: space-between;
     border-radius: 15%;
   }
-}
-@media screen and (max-width: 768px) {
-  body {
-    display: block;
-    margin-top: 3rem;
-    margin-left: 0rem;
-    justify-content: center;
-    background-color: var(--body-color);
+
+  .event {
+    font-size: 9px;
+    padding: 1px;
+    background-color: var(--event-color);
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    max-height: 75px;
+    overflow: hidden;
+    text-align: center;
   }
 
-  #header button {
-    height: 2rem;
-    margin-right: 3.5rem;
-  }
-
-  .imgze {
-    /* altura definida */
-    height: 100vh;
-  }
-
-  .day {
-    width: 4.25rem;
-    padding: 10px;
-    height: 4.25rem;
-    cursor: pointer;
-    box-sizing: border-box;
-    background-color: var(--color-day);
-    margin: 15px;
-    box-shadow: 0px 0px 3px var(--box-shadow);
+  #weekdays {
+    width: 90%;
     display: flex;
-    flex-direction: column;
-    /* correção no justify-content */
-    justify-content: space-between;
-    border-radius: 15%;
+    color: #ffffff ;
+    font-size: 15px;
+  
   }
 }
 
